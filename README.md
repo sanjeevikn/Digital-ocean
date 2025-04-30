@@ -64,7 +64,7 @@ Follow these steps to quickly deploy the application on your DigitalOcean Kubern
         ```
     * Open the `EXTERNAL-IP` in your web browser.
 
-5.  ** Metrics Server:**
+5.  ***Metrics Server:****
     * Install Metrics Server using Helm as described in the **Setup Guide (Step 5)** to enable HPA based on CPU utilization.
 
 ## Scaling
