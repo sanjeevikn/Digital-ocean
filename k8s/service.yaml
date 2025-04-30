@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: my-app-loadbalancer
+  annotations:
+    service.beta.kubernetes.io/do-loadbalancer-name: "my-app-lb" # Optional: Specify a name
+spec:
+  type: LoadBalancer
+  ports:
+    - port: 80
+      targetPort: 80 # Adjust to your application's port
+  selector:
+    app: flask-app # Ensure this matches your app's labels

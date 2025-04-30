@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: flask-app
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: flask-app
+  template:
+    metadata:
+      labels:
+        app: flask-app
+    spec:
+      imagePullSecrets:
+      - name: registry-sanjeevi-registry
+      containers:
+      - name: flask-container
+        image: registry.digitalocean.com/sanjeevi-registry/my-dgocean-app:v3
+        ports:
+        - containerPort: 80
+        resources:
+          requests:
+            cpu: 100m
