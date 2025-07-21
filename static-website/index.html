@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Lightweight Static Website</title>
+    <!-- Tailwind CSS CDN for basic styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom styles for the Inter font and basic layout */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f4f8; /* Light blue-gray background */
+            color: #334155; /* Darker text color */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+        .container {
+            max-width: 600px;
+            width: 90%; /* Fluid width for responsiveness */
+            padding: 2rem;
+            background-color: #ffffff;
+            border-radius: 0.75rem; /* rounded-xl */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* shadow-md */
+            text-align: center;
+        }
+        .header {
+            font-size: 2.25rem; /* text-4xl */
+            font-weight: 700; /* font-bold */
+            color: #1e293b; /* Slate-900 */
+            margin-bottom: 1rem;
+        }
+        .sub-header {
+            font-size: 1.25rem; /* text-xl */
+            color: #475569; /* Slate-600 */
+            margin-bottom: 2rem;
+        }
+        .content-paragraph {
+            font-size: 1rem; /* text-base */
+            line-height: 1.6;
+            color: #64748b; /* Slate-500 */
+            margin-bottom: 1.5rem;
+        }
+        .cta-button {
+            display: inline-block;
+            background-color: #0070f3; /* DigitalOcean blue */
+            color: #ffffff;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.5rem; /* rounded-lg */
+            font-weight: 600;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+        .cta-button:hover {
+            background-color: #005bb5; /* Darker blue on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="header">
+            Welcome to My Static Website!
+        </h1>
+        <p class="sub-header">
+            Deployed effortlessly on DigitalOcean App Platform.
+        </p>
+        <p class="content-paragraph">
+            This is a simple, lightweight HTML page. Static sites are perfect for portfolios, blogs, marketing pages,
+            and any content that doesn't require server-side processing or database interactions.
+            They are fast, secure, and cost-effective to host.
+        </p>
+        <p class="content-paragraph">
+            You can easily update this content by pushing changes to your Git repository,
+            and DigitalOcean App Platform will automatically redeploy your site.
+        </p>
+        <a href="https://www.digitalocean.com/products/app-platform" target="_blank" class="cta-button">
+            Learn More About App Platform
+        </a>
+    </div>
+</body>
+</html>
+
